@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Admisión - Colegio Superior</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/FormularioAdmision.css">
+</head>
+<body>  
+    <header class="full-reset header">
+        <div class="item-active">
+            <img src="assets/img/Cream, Green and Red Modern English Class Google Classroom Header.gif" alt="default" class="responsive-image">
+        </div>
+            
+    </header>
+    <br>
+<main>
+    <form action="procesar_solicitud.php" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="grado">Grado al que se postula:</label>
+        <select id="grado" name="grado" required>
+            <option value=""></option>
+            <option value="primero">Primero</option>
+            <option value="segundo">Segundo</option>
+            <option value="tercero">Tercero</option>
+            <option value="cuarto">Cuarto</option>
+            <option value="quinto">Quinto</option>
+            <option value="sexto">Sexto</option>
+            <option value="septimo">Septimo</option>
+            <option value="octavo">Octavo</option>
+            <option value="noveno">Noveno</option>
+            <option value="decimo">Decimo</option>
+            <option value="once">Once</option>
+        </select>
+
+        <label for="motivo">Motivo de la solicitud:</label>
+        <textarea id="motivo" name="motivo" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar Solicitud">
+    </form>
+</main>
+    <!--======================================== Pie de página ========================================-->
+    <footer class="full-reset footer">
+        <div class="full-reset" style="padding: 15px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4"">
+                        <div class="text-left">
+                            <h4 class="titles">Visítenos en</h4>
+                            <p>Calle 18B, 30ª-54 Barrio Manantial</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4"">
+                        <div class="text-center">
+                            <h4 class="titles">Contáctenos</h4>
+                            <p>Tele: +(57) 3195744140 <br>Correo Electrónico: ks9127444@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="text-right">
+                            <h4 class="titles">Síguenos en:</h4>
+                            <ul class="list-unstyled links-footer">
+                                <li><a href="https://www.facebook.com/kevinandressotolarios" class="open-link-newTab"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="admisiones.html" class="btn-flotante">Regresar</a>
+</body>
+</html>

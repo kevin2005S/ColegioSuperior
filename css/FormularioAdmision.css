@@ -1,0 +1,187 @@
+/* Estilos para el encabezado */
+.header {
+  background-color: #FFF9F6; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación de texto al centro */
+  position: relative; /* Posición relativa para elementos hijos */
+  z-index: 97; /* Z-index para controlar el orden de apilamiento */
+}
+
+/* Estilo para la imagen del encabezado (haz que sea responsive) */
+.header img.responsive-image {
+  max-width: 50%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios en blanco debajo de la imagen */
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  padding: 20px; /* Espaciado interno del formulario */
+}
+
+/* Estilos para las etiquetas de los campos de entrada */
+label {
+  display: block; /* Hace que las etiquetas sean bloques para que ocupen toda la línea */
+  margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
+  font-weight: bold; /* Fuente en negrita para las etiquetas */
+}
+
+/* Estilos para los campos de entrada de texto, fecha, teléfono, correo y textarea */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+  padding: 10px; /* Espaciado interno de los campos de entrada */
+  margin-bottom: 20px; /* Espaciado inferior entre campos de entrada */
+  border: 1px solid #ccc; /* Borde con un ligero sombreado */
+  border-radius: 4px; /* Bordes redondeados para los campos de entrada */
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+  background-color: #00796b; /* Color de fondo del botón de envío */
+  color: white; /* Color del texto del botón de envío */
+  padding: 10px 20px; /* Espaciado interno del botón de envío */
+  border: none; /* Sin borde para el botón */
+  border-radius: 4px; /* Bordes redondeados para el botón de envío */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+}
+
+/* Estilos para el botón de envío al pasar el mouse */
+input[type="submit"]:hover {
+  background-color: #005a4b; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+.footer {
+  clear: both;
+  color: #fff;
+  background-color: #00796b;
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+
+/* Estilo para el texto de derechos de autor en el pie de página */
+.footer-copyright {
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Estilo para los enlaces y subtítulos en el pie de página */
+.links-footer,
+.subtitles-footer {
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  clear: both;
+  color: #fff;
+  background-color: #00796b;
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+
+/* Estilo para el texto de derechos de autor en el pie de página */
+.footer-copyright {
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Estilo para los enlaces y subtítulos en el pie de página */
+.links-footer,
+.subtitles-footer {
+  padding-left: 10px;
+  text-align: center;
+}
+
+/* Estilo para los enlaces en la sección de enlaces del pie de página */
+.links-footer li a {
+  color: #fff;
+}
+
+/* Estilo para los enlaces cuando se pasa el cursor sobre ellos */
+.links-footer li a:hover {
+  color: #ffca28;
+  text-decoration: none;
+}
+
+/* Estilo para los enlaces activos en la sección de enlaces del pie de página */
+.links-footer li.active a {
+  color: #ffca28;
+}
+
+/* Estilos para la parte izquierda del pie de página */
+.text-left {
+  position: absolute;
+  width: calc(50% - 10px); /* 50% del ancho y ajuste del espacio en los lados */
+  left: 5px;
+  top: 15px;
+}
+
+/* Estilos para la parte derecha del pie de página */
+.text-right {
+  position: absolute;
+  width: calc(50% - 10px); /* 50% del ancho y ajuste del espacio en los lados */
+  right: 5px; /* Cambiar a "right" en lugar de "left" */
+  top: 15px;
+  text-align: center;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 900px) {
+  /* Redefinir el ancho y la posición para .text-left y .text-right */
+  .text-left,
+  .text-right {
+    position: static; /* Cambiar a la posición estática para que fluyan con el contenido */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    text-align: center; /* Alinear el texto a la izquierda */
+  }
+}
+
+.btn-flotante {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background-color: #239e6f;
+  padding: 18px 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.btn-flotante:hover {
+  background-color: #0c4932;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+    padding: 10px 15px; /* Reducir el relleno */
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
